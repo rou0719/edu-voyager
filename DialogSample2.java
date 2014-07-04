@@ -1,0 +1,21 @@
+import java.io.*;
+
+public class DialogSample2
+{
+	public static void main(String[] args)
+	{
+		System.out.println("‚¨–¼‘O‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        try
+        {
+            String s = br.readLine();
+            //String br;
+		    System.out.println(s + "‚³‚ñ‚±‚ñ‚É‚¿‚Í");
+        }catch(Exception e)
+        {
+		    System.out.println("ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½");
+        }
+	}
+}

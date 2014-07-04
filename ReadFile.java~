@@ -1,0 +1,34 @@
+import java.io.*;
+
+public class ReadFile
+{
+	public static void main(String[] args)
+	{
+        String s = args[0];
+        try
+
+        {
+            BufferedReader br = new BufferedReader
+
+                    (new FileReader(s));
+            
+            String srtData;
+            strData = br.readLine();
+            while(strData != null)
+            {
+                System.out.println(strData);
+                strData = br.readLine();
+            }
+            br.close();
+
+        }
+            catch(FileNotFoundException e)
+        {
+            System.out.println("ƒtƒ@ƒCƒ‹‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
+        }
+            catch(IOException e)
+        {
+            System.out.println(e);
+        }
+	}
+}
