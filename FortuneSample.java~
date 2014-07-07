@@ -1,0 +1,64 @@
+import java.io.*;
+import java.util.*;
+
+public class FortuneSample
+{
+	public static void main(String[] args)
+	{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("’a¶ŒŽ‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+        
+        try
+        {
+            long lngMonth = Long.parseLong(br.readLine());
+
+		    while(lngMonth >12 || lngMonth < 1)
+            {
+		        System.out.println("³‚µ‚¢’l‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+            
+                lngMonth = Long.parseLong(br.readLine());
+            }
+            long rndData = 0;
+            //Date dateNow = new Date();
+
+            Random r = new Random(System.currentTimeMillis() + lngMonth);
+
+            rndData = Math.round(r.nextDouble() * 19 +1);
+
+            if(rndData == 1)
+            {
+                System.out.println("\"‘å‹g\"‚Å‚·");
+            }else if(rndData >= 2 && rndData <= 4)
+            {
+                System.out.println("\"’†‹g\"‚Å‚·");
+            }else if(rndData >= 5 && rndData <= 9)
+            {
+                System.out.println("\"‘å‹g\"‚Å‚·");
+            }else if(rndData >= 10 && rndData <= 17)
+            {
+                System.out.println("\"‹g\"‚Å‚·");
+            }else if(rndData >= 18 && rndData <= 19)
+            {
+                System.out.println("\"‹¥\"‚Å‚·");
+            }else if(rndData == 20)
+            {
+                System.out.println("\"‘å‹¥\"‚Å‚·");
+            }else
+            {
+                System.out.println("ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½");
+                System.out.println("rndData‚Ì’l‚Í" + rndData);
+            }
+        }catch(IOException e)
+        {
+            System.out.println("“ü—Í’l‚ÌƒGƒ‰[");
+        }catch(NumberFormatException e)
+        {
+           System.out.println(e);
+           System.out.println("®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+           System.out.println("ƒvƒƒOƒ‰ƒ€‚ðI—¹‚µ‚Ü‚·");
+        }
+    }
+
+}
+

@@ -1,0 +1,12 @@
+public class StringLength
+{
+	public static void main(String[] args)
+	{
+        String s = args[0];
+        int intCount; 
+
+        intCount = s.length();
+
+		System.out.println("•¶Žš—ñ‚Ì’·‚³‚Í" + intCount + "‚Å‚·");
+	}
+}

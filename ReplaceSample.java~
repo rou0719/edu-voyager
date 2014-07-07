@@ -1,0 +1,12 @@
+public class replaceSample
+{
+	public static void main(String[] args)
+	{
+        String a = args[0];
+
+        a = a.replace('a' , 't' );
+
+		System.out.println("’u‚«Š·‚¦•¶Žš—ñ‚Í" + a + "‚Å‚·");
+
+	}
+}

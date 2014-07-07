@@ -1,0 +1,21 @@
+public class IfNestSample
+{
+    public static void main(String[] args)
+    {
+        int i = 14;
+      
+        if(i >= 10)
+        {
+            System.out.println("iは10以上です");
+        
+        　　if(i == 20)
+        　　{　
+            System.out.println("iの値は20です");
+        　　}  
+        　　else
+        　　{
+            System.out.println("iは20ではない");
+        　　}
+        }
+    }
+}    

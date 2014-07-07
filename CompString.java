@@ -1,0 +1,26 @@
+public class CompString
+{
+	public static void main(String[] args)
+	{
+        String  s1 = "abc";
+        String  s2 = "abcde";
+
+        if(s1 == s2.substring(0, 3))
+        {        
+		    System.out.println(" [==] ‚ÌŒ‹‰Ê‚Ítrue‚Å‚·");
+        }
+        else
+        {
+            System.out.println(" [==] ‚ÌŒ‹‰Ê‚Ífalse‚Å‚·");
+        }
+
+        if(s1.equals(s2.substring(0, 2)))
+        {        
+		    System.out.println(" [equals] ‚ÌŒ‹‰Ê‚Ítrue‚Å‚·");
+        }
+        else
+        {
+            System.out.println(" [equals] ‚ÌŒ‹‰Ê‚Ífalse‚Å‚·");
+        }
+	}
+}
