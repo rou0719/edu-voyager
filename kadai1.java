@@ -14,7 +14,8 @@ public class kadai1
 
 		try
 		{
-			int ans = Integer.parseInt(br.readLine());
+			int ans;
+			ans = Integer.parseInt(br.readLine());
 			
 			for(int i = 1; i <= ans*ans; i++)
 			{
@@ -23,15 +24,17 @@ public class kadai1
 					System.out.print(i+ "  ");
 					
 				}else
+				{
 				
 					System.out.print(i + "   ");
-				
-				if(i % ans == 0)
-				
+				}if(i % ans == 0)
 				{
 					System.out.println();
 					System.out.println();
+					
 				}
+				
+				//ans = Integer.parseInt(br.readLine());
 			}
 			
 		}catch(IOException e)
