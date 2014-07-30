@@ -22,5 +22,11 @@
 <p><a HREF="<%=request.getContextPath()%>/1.txt">1.txt</a>
 (1.txt)
 
+<p><a HREF="2.txt">2.txt</a>
+(2.txt)
+
+<p><a HREF="<%=request.getContextPath()%>/2.txt">2.txt</a>
+(2.txt)
+
 </body>
 </html>
